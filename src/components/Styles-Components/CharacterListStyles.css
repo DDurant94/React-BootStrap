@@ -1,0 +1,27 @@
+#character-list-img:hover{
+  cursor: pointer;
+}
+
+li:hover{
+  background-color: rgba(255, 0, 0, 0.559);
+}
+
+#nav-links:hover{
+  color: rgba(255, 255, 255, 0.822);
+  background-color: rgba(0, 0, 0, 0.222);
+}
+
+#home-page{
+  background-color: rgba(0, 0, 0, 0.705);
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#app-container{
+  background-color: rgba(0, 191, 255, 0.436);
+  text-wrap: wrap;
+}
+
+#characters:hover{
+  background-color: rgba(255, 0, 0, 0.559) !important;
+}
