@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import {Link} from "react-router-dom";
-import  { Container, Row,Col,Button } from "react-bootstrap";
+import  { Container, Row, Col, Button } from "react-bootstrap";
 import error from "./../../assets/pictures/error.png";
 
 
@@ -44,9 +44,9 @@ function NotFound(){
 
       <Row>
 
-        <Col className="container-fluid-center">
+        <Col className="container-fluid">
 
-          <div className="mb-3">
+          <div className="mb-3" id="error-img">
 
             <img src={error} alt="404 error picture" className='img-fluid rounded border border-black shadow-lg'/>
             
