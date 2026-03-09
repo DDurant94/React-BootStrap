@@ -14,10 +14,10 @@ const CharacterList = ({characters}) => {
 
   });
 
-  if(loading) return <p className="text-center fs-1 text-dark-emphasis">Loading...</p>;
+  if(loading) return <p className="text-center fs-1" style={{height: "100vh"}}>Loading...</p>;
 
   return (
-    <section className='container-fluid-center bg-dark border border-dark rounded shadow m-2' style={{width: 100+"%", height: 100+"%"}} >
+    <section className='container-fluid-center bg-dark border border-dark rounded shadow m-2'>
 
       <div className='container-fluid-center m-3 p-3 font-monospace'>
 
