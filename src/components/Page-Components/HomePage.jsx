@@ -12,6 +12,10 @@ const HomePage = () => {
         <div className="bg-dark-subtle p-4 rounded border border-danger">
 
           <h1 className="text-center text-decoration-underline text-white">Welcome to React Marvel API</h1>
+          <p className="text-center text-white">Marvel API is no longer active as of 2024</p>
+          <p className="text-center text-white">
+            This is a React web application that utilizes the Marvel API to display information about Marvel characters. You can browse through a list of characters, view their details, and explore their associated comics. The application is built using React, React Router, and React Bootstrap for styling and layout.
+          </p>
           
         </div>
 
