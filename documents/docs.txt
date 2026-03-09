@@ -124,3 +124,38 @@ Assignment Questions:
   different screen sizes. An engaging image is displayed, reducing the frustration typically associated with 
   error pages. Navigation back to the homepage is facilitated by a styled NavLink, encouraging users to 
   continue browsing the site.
+
+
+Deployment (GitHub Pages):
+  This project is deployed and hosted on GitHub Pages at:
+  https://ddurant94.github.io/React-BootStrap/
+
+  Setup Steps:
+    1. Install gh-pages:
+         npm install --save-dev gh-pages
+
+    2. Add the following to vite.config.js inside defineConfig:
+         base: '/React-BootStrap/'
+
+    3. Add deploy scripts to package.json:
+         "predeploy": "npm run build",
+         "deploy": "gh-pages -d dist"
+
+    4. Switch BrowserRouter to HashRouter in src/main.jsx to prevent 404s on
+       direct route navigation (GitHub Pages does not support client-side routing
+       with BrowserRouter):
+         import { HashRouter as BrowserRouter } from 'react-router-dom'
+
+    5. If on Windows, enable long path support in Git (required when the project
+       is nested deep in folders - Git has a 260-character path limit by default):
+         git config --global core.longpaths true
+
+    6. Deploy:
+         npm run deploy
+
+    7. In GitHub repo Settings -> Pages -> Branch, select 'gh-pages' and save.
+
+  Notes:
+    - Run 'npm run deploy' any time you want to publish updates.
+    - The 'gh-pages' branch is auto-created by the deploy command and should not
+      be edited manually.
